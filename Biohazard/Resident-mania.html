@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Resident-mania</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('RPD png.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: #e0e0e0;
+    }
+
+    /* MENÚ VERTICAL FIJO A LA IZQUIERDA CON ENLACES A CADA HTML */
+    #vertical {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 100vh;
+      background-color: rgba(29, 31, 36, 0.95);
+      border-right: 2px solid #7c2929;
+      padding-top: 15px;
+      z-index: 1000;
+    }
+
+    #vertical h2 {
+      font-size: 16px;
+      color: #e24a4a;
+      text-align: center;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    #vertical ul {
+      list-style: none;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    #vertical a {
+      font-size: 13px;
+      font-variant: small-caps;
+      color: #ffffff;
+      display: block;
+      text-decoration: none;
+      padding: 10px 8px;
+      background-color: #8b0000;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    #vertical a:hover {
+      background-color: #ff0000;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .main-container {
+      margin-left: 200px;
+      padding: 20px;
+      max-width: 900px;
+    }
+
+    h1 {
+      color: #ff4d4d;
+      text-align: center;
+      border-bottom: 2px solid #aa8869;
+      padding-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .mapa-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .mapa-box img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #7c2929;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+    }
+
+    /* CUADROS DE SUPERVIVENCIA */
+    .survival-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background-color: rgba(18, 20, 24, 0.88);
+      border: 1px solid #4a6391;
+      border-left: 5px solid #7c2929;
+      border-radius: 4px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #ff6b6b;
+      font-size: 18px;
+      border-bottom: 1px dashed #4a6391;
+      padding-bottom: 5px;
+    }
+
+    .card p {
+      margin: 6px 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .card strong {
+      color: #9bbdff;
+    }
+
+    .card .resumen {
+      margin-top: 10px;
+      color: #cccccc;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV DE LA PÁGINA PRINCIPAL -->
+  <nav id="vertical">
+    <h2>Resident Evil<br>(1-6)</h2>
+    <ul>
+      <!-- BOTÓN DE INICIO / PRINCIPAL -->
+      <li><a href="web.html" style="background-color: #4a6391;">★ Inicio</a></li>
+      
+      <!-- ENLACES A CADA JUEGO -->
+      <li><a href="re1.html">Resident Evil 1</a></li>
+      <li><a href="re2.html">Resident Evil 2</a></li>
+      <li><a href="re3.html">Resident Evil 3</a></li>
+      <li><a href="re4.html">Resident Evil 4</a></li>
+      <li><a href="re5.html">Resident Evil 5</a></li>
+      <li><a href="re6.html">Resident Evil 6</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
+  <div class="main-container">
+    <h1>Biohazard / Resident Evil</h1>
+
+    <div class="mapa-box">
+      <img src="mapa png.jpg" alt="Mapa Raccoon City" width="400">
+    </div>
+
+    <h2 style="text-align: center; color: #ffbc6b;">Estado de Supervivencia General</h2>
+
+    <div class="survival-grid">
+
+      <div class="card">
+        <h3>Resident Evil 1 (1998 - Mansión Spencer)</h3>
+        <p><strong>Estado:</strong> Contenido / Mansión Destruida.</p>
+        <p><strong>Amenaza:</strong> Virus T / BOWs (Hunters, Tyrant T-002).</p>
+        <p><strong>Supervivientes:</strong> Chris Redfield, Jill Valentine, Barry Burton, Rebecca Chambers.</p>
+        <p class="resumen"><strong>Resumen:</strong> El equipo S.T.A.R.S. explora Arklay, descubre los experimentos de Umbrella y destruye la mansión antes de huir en helicóptero.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resident Evil 2 (1998 - Raccoon City)</h3>
+        <p><strong>Estado:</strong> Catástrofe Urbana / Cuarentena Fallida.</p>
+        <p><strong>Amenaza:</strong> Virus T, Virus G (Birkin), Tyrant (Mr. X).</p>
+        <p><strong>Supervivientes:</strong> Leon S. Kennedy, Claire Redfield, Sherry Birkin, Ada Wong.</p>
+        <p class="resumen"><strong>Resumen:</strong> Brote masivo destruye la ciudad. Los supervivientes se abren paso por la comisaría y NEST, escapando en tren previo al impacto nuclear.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resident Evil 3: Nemesis (1998 - Colapso de Raccoon City)</h3>
+        <p><strong>Estado:</strong> Aniquilación Total por Misil Táctico.</p>
+        <p><strong>Amenaza:</strong> Nemesis T-Type, hordas de infectados.</p>
+        <p><strong>Supervivientes:</strong> Jill Valentine, Carlos Oliveira.</p>
+        <p class="resumen"><strong>Resumen:</strong> Jill evade al perseguidor Nemesis diseñado para liquidar a S.T.A.R.S., logrando escapar justo antes del bombardeo definitivo.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resident Evil 4 (2004 - El Pueblo / España)</h3>
+        <p><strong>Estado:</strong> Culto Neutralizado.</p>
+        <p><strong>Amenaza:</strong> Parásito "Las Plagas", Osmund Saddler, Krauser.</p>
+        <p><strong>Supervivientes:</strong> Leon S. Kennedy, Ashley Graham, Ada Wong.</p>
+        <p class="resumen"><strong>Resumen:</strong> Leon rescata a la hija del presidente en una región controlada por Los Illuminados, destruyendo la base insular del culto.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resident Evil 5 (2009 - Kijuju, África)</h3>
+        <p><strong>Estado:</strong> Amenaza Global Erradicada.</p>
+        <p><strong>Amenaza:</strong> Las Plagas 2 y 3, Virus Uroboros, Albert Wesker.</p>
+        <p><strong>Supervivientes:</strong> Chris Redfield, Sheva Alomar, Jill Valentine, Josh Stone.</p>
+        <p class="resumen"><strong>Resumen:</strong> La BSAA frena el plan de Wesker para infectar el planeta con Uroboros, eliminándolo en un enfrentamiento en un volcán.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resident Evil 6 (2012-2013 - Incidentes Globales)</h3>
+        <p><strong>Estado:</strong> Crisis Pandémica Controlada.</p>
+        <p><strong>Amenaza:</strong> Virus C, Haos, Neo-Umbrella.</p>
+        <p><strong>Supervivientes:</strong> Leon, Helena, Chris, Jake Muller, Sherry, Ada.</p>
+        <p><strong>Bajas:</strong> Piers Nivans.</p>
+        <p class="resumen"><strong>Resumen:</strong> Ataques bioterroristas simultáneos a nivel mundial son contenidos gracias a los anticuerpos desarrollados con la sangre de Jake Muller.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
